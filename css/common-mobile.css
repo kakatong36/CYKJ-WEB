@@ -1,0 +1,28 @@
+
+.swiper-height{
+	height: 20rem !important;
+}
+html{
+	font-size: 10px;
+}
+.center-content{
+	width: 100% !important;
+	margin: 0 auto;
+}
+.wx-info{
+	width: 100%;
+	display: flex;
+	padding: 0 5rem;
+	justify-content: center;
+}
+.wx-info img:first-child{
+	margin-right: 0.5rem;
+}
+.fontWeight-bold{
+	font-weight: bold;
+}
+footer.footer_info .font-color-footer{
+	font-size: 2.5rem;
+	padding: 0;
+	margin: 0 auto 1rem;
+}

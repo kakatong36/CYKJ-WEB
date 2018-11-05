@@ -1,0 +1,101 @@
+.section-news{
+	
+}
+.section-news .center-content{
+	width: 84% !important;
+	margin: 0 auto;
+}
+.section-news .center-content .news-list{
+
+}
+.section-news .center-content .news-list .news-item{
+	border-bottom: 2px solid #E5E5E5;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 7.5rem 5.8rem;
+	flex-wrap: wrap;
+}
+.section-news .center-content .news-list .news-item:last-child{
+	border-bottom: none;
+}
+.section-news .center-content .news-list .news-item img{
+	max-width: 100%;
+}
+.section-news .center-content .news-list .news-item .introduce{
+	display: flex;
+	width: 54rem;
+	flex-direction: column;
+	justify-content: flex-start;
+	cursor: pointer;
+}
+.section-news .center-content .news-list .news-item .introduce .title{
+	color: #333333;
+	font-size: 3.3rem;
+}
+.section-news .center-content .news-list .news-item .introduce .content{
+	font-size: 2rem;
+	color: 999999;
+	overflow: hidden;
+	word-break:break-all;  
+	text-overflow: ellipsis;
+	-o-text-overflow:ellipsis;
+	display:-webkit-box;
+	-webkit-box-orient:vertical;
+	-webkit-line-clamp:3;
+}
+.section-news .center-content .news-list .news-item .introduce .learnMore{
+	font-size: 2rem;
+	color: #29ace0;
+} 
+
+
+/* 新闻详情页面样式 */
+.section-newsView{
+
+}
+.section-newsView .center-content{
+	width: 66% !important;
+	margin: 0 auto;
+	text-align: center;
+}
+.section-newsView .center-content .Main-title{
+	font-size: 3.3rem;
+}
+.section-newsView .center-content .complete-intro{
+	font-size: 1.6rem;
+}
+.content-flex{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.section-newsView .center-content .article,.summarize{
+	padding-left: 13rem;
+	padding-right:	13rem; 
+}
+.section-newsView .center-content .article .article-item .title{
+	font-size: 1.5rem;
+	text-align: left;
+	font-weight: bold;
+	color: #666666;
+}
+.section-newsView .center-content .article .article-item p,
+.summarize span,
+.endJusmp span{
+	font-size: 1.5rem;
+	color: #666666;
+	text-align: justify;
+}
+.endJusmp{
+	display: flex;
+	justify-content: space-between;
+}
+.endJusmp a{
+	font-size: 1.5rem;
+	text-align: left;
+	color: #666666;
+	text-decoration: none;
+}
+.endJusmp span:first-child{
+	font-weight: bold;
+}

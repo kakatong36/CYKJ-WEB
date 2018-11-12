@@ -22,11 +22,11 @@
 .section-about .center-content .right .content p,
 .section-about-center .center-content .content p{
 	font-size: 1.3rem;
-	color: #666666;
+	color: #333333;
 }
 .section-about.bg-color{
 	padding: 13rem 0;
-	background: #333c4b;
+	background: #E0E0E0;
 }
 
 .section-about-center .center-content{

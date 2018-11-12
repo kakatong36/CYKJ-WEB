@@ -177,8 +177,9 @@ html{
 }	
 	/*解决方案tab切换  */
 	.section-features .tab-box{
-		width: 77%;
+		/* width: 77%; */
 		/* height: 100%; */
+		width: 60%;
 		margin: 0 auto 5.8rem;
 		display: flex;
 	}

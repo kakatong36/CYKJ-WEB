@@ -7,6 +7,7 @@
 }
 .swiper-height{
 	height: 20rem !important;
+	margin-top: 4.5rem;
 }
 .section-about1 .center-content .left img{
 	margin-right: 5rem;
@@ -26,11 +27,11 @@
 .section-about1 .center-content .right .content p,
 .section-about1-center .center-content .content p{
 	font-size: 2.5rem;
-	color: #666666;
+	color: #333333;
 }
 .section-about1.bg-color{
 	padding: 3rem 0;
-	background: #333c4b;
+	background: #E0E0E0;
 }
 
 .section-about1-center .center-content{

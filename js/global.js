@@ -204,7 +204,7 @@
         $('.digle').css('visibility', 'visible').addClass('fadeInLeft');
         $('.factory2').css('visibility', 'visible').addClass('fadeInLeft');
         $('.DZ').css('visibility', 'visible').addClass('fadeInLeft');
-        $('.WX').css('visibility', 'visible').addClass('fadeInLeft');
+		$('.WX').css('visibility', 'visible').addClass('fadeInLeft');
     });
 
     // Config Animsition
@@ -399,8 +399,28 @@
             .parent().removeClass("active")
             .end().filter("[href='#"+id+"']").parent().addClass("active");
 
-    });
+	});
+	
 
+	// 导航栏【产品】悬浮展示下拉浮框并能点击跳转至产品单页面
+	$("#pro_handleHover").mouseenter(function(){
+		$(".production_hover").fadeIn();
+		$(".shadow_box").fadeIn();
+	})
+	$($(".production_hover")[0]).mouseleave(function(){
+		$(".production_hover").fadeOut();
+		$(".shadow_box").fadeOut();
+	})
+	//计算方法实现
+	window.onmousemove = function(){
+		var e = window.event || arguments[0];
+		var x = e.pageX || e.clientX + scrollX;
+		var y = e.pageY || e.clientY + scrollY;
+		if(y<50&&(x<= 270 || x >= 350) || y<=5){
+			$(".production_hover").fadeOut();
+			$(".shadow_box").fadeOut();
+		}
+	}
 
 })(jQuery);
 

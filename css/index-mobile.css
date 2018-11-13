@@ -5,8 +5,40 @@
 }
 .swiper-height{
 	height: 20rem;
+	margin-top: 4.5rem;
 }
-
+/* 导航链接处理 */
+#swiper_Mobile .swiper-wrapper .swiper-slide .left_intro{
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 3rem !important; 
+}
+#swiper_Mobile .swiper-wrapper .swiper-slide .left_intro .title{
+	font-size: 1rem;
+	margin-bottom: 0.3rem;
+}
+#swiper_Mobile .swiper-wrapper .swiper-slide .left_intro .handle_btn{
+	font-size: 0.3rem !important;
+	margin-top: 0.3rem;
+	width: 5rem;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 0.1rem 0;
+	border: 1px solid #FFFFFF;
+	cursor: pointer;
+} 
+#swiper_Mobile .swiper-wrapper .swiper-slide .left_intro a{
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
+}
 
 .section-slide{
 	padding-top: 0.88rem;

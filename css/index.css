@@ -25,6 +25,7 @@ html{
 }
 .swiper-height{
 	height: 33rem;
+	margin-top: 4rem; 
 }
 .swiper-height .swiper-pagination .swiper-pagination-bullet{
 	border-radius: 0;
@@ -38,6 +39,44 @@ html{
 .swiper-container .swiper-wrapper .swiper-slide img.img-fluid{
 	width: 100%;
 	height: 100%;
+}
+.swiper-container .swiper-wrapper .swiper-slide{
+	position: relative;
+}
+.swiper-container .swiper-wrapper .swiper-slide .left_intro{
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: #FFFFFF;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center; 
+	padding-left: 21rem;
+}
+.swiper-container .swiper-wrapper .swiper-slide .left_intro .title{
+	font-size: 4rem;
+	margin-bottom: 2.5rem;
+} 
+.swiper-container .swiper-wrapper .swiper-slide .left_intro p{
+	font-size: 1.8rem;
+	color: rgba(255,255,255,0.7);
+} 
+.swiper-container .swiper-wrapper .swiper-slide .left_intro .handle_btn{
+	font-size: 1.5rem;
+	margin-top: 0.5rem;
+	width: 11.67rem;
+	color: #FFFFFF;
+	text-align: center;
+	padding: 0.5rem 0;
+	border: 1px solid #FFFFFF;
+	cursor: pointer;
+} 
+.swiper-container .swiper-wrapper .swiper-slide .left_intro a{
+	color: #FFFFFF;
+	text-decoration: none;
+	display: block;
 }
 /* 分页器样式 */
 /* 功能菜单 */
@@ -177,8 +216,6 @@ html{
 }	
 	/*解决方案tab切换  */
 	.section-features .tab-box{
-		/* width: 77%; */
-		/* height: 100%; */
 		width: 60%;
 		margin: 0 auto 5.8rem;
 		display: flex;
@@ -328,3 +365,55 @@ footer .copyright a{
 		height: 0;
 		background-color: none;
 	} */
+
+/* 产品下拉图 */
+header.section-header .production_hover{
+	width: 100%;
+	height: 29rem;
+	position: absolute;
+	top: 4.3rem;
+	left: 0;
+	display: none;
+	background: #FFFFFF;
+	box-shadow: 1px -1px 5px rgba(0,0,0,0.5) inset;
+}
+header.section-header .production_hover .center-content{
+	margin: 0 auto;
+}
+header.section-header .production_hover .flex_pro{
+	height: 100%;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+header.section-header .production_hover .flex_pro .flex_proItem{
+	margin: 0 8rem 0 2rem; 
+	cursor: pointer;  
+}
+header.section-header .production_hover .flex_pro .flex_proItem .title{
+	font-size: 1.3rem;
+}
+header.section-header .production_hover .flex_pro .flex_proItem>span{
+	display: block;
+	padding: 0.5rem 0;
+}
+header.section-header .production_hover .flex_pro .flex_proItem .img{
+	min-width: 10rem;
+	height: 10rem;
+	text-align: center;
+	margin-top: 1rem;
+}
+header.section-header .production_hover .flex_pro .flex_proItem .img img{
+	max-width: 100%;
+	max-height: 100%;
+}
+header.section-header .shadow_box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: -1;
+	display: none;
+	background: rgba(0,0,0,0.5);
+}

@@ -39,7 +39,7 @@
 				</button>
 				<div class="navbar-collapse collapse" id="navbarSupportedContent">
 					<ul class="navbar-nav">
-						<li class="nav-item">
+						<li class="nav-item productionNav" id="pro_handleHover">
 							<a class="nav-link" href="index.html#intro">产品</a>
 						</li>
 						<li class="nav-item">
@@ -57,6 +57,42 @@
 					</ul>
 				</div>
 			</div>
+			<!-- 下拉模块 -->
+			<div class="production_hover">
+				<div class="container">
+					<div class="flex_pro">
+						<div class="flex_proItem" onclick="handleToView('digital.html')">
+							<div class="title font-bold">数字化珠宝智能管理系统</div>
+							<span>管理系统结合RFID和人脸识别两大前沿科技</span>
+							<div class="img">
+								<img src="./images/index/managementSystem.png" alt="">
+							</div>
+						</div>
+						<div class="flex_proItem" onclick="handleToView('factoryHelp.html')">
+							<div class="title font-bold">工厂（板房）下单助手</div>
+							<span>专为珠宝批发设计的线上下单选货软件</span>
+							<div class="img">
+								<img src="./images/index/index_02.png" alt="">
+							</div>
+						</div>
+						<div class="flex_proItem" onclick="handleToView('pearlDZ.html')">
+							<div class="title font-bold">珠宝定制助手</div>
+							<span>专为珠宝定制业务模式开发的软件系统</span>
+							<div class="img">
+								<img src="./images/index/index_03.png" alt="">
+							</div>
+						</div>
+						<div class="flex_proItem" onclick="handleToView('wxCustomer.html')">
+							<div class="title font-bold">微信客户跟进系统</div>
+							<span>专为珠宝客户研发的微信自动化营销系统</span>
+							<div class="img">
+								<img src="./images/index/index_04.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="shadow_box"></div>
 		</nav>
 	</header>
 
@@ -445,6 +481,10 @@
 			$(".section-product-4 .content").removeClass("active").eq(index).addClass("active");
 
 		});
+		//点击跳转到产品详情页
+		function handleToView(link){
+			location.href=link;
+		}
 	</script>
 
 </body>

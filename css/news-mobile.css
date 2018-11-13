@@ -1,5 +1,6 @@
   .swiper-height{
-	  height: 20rem !important;
+	height: 20rem !important;
+	margin-top: 4.5rem;
   }
 .section-news .center-content,
 .section-newsView .center-content{

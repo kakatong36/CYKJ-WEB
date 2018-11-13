@@ -2,7 +2,8 @@
 	width: 100% !important; 
 }
 .swiper-height{
-	height: 20rem;
+	height: 20rem !important;
+	margin-top: 4.5rem;
 }
 .section-header.fixed .hamburger-inner,
 .section-header.fixed .hamburger-inner:after,

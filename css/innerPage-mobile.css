@@ -19,7 +19,6 @@
 	overflow: auto;
 }
 .section-Cooperation .slider .inner{
-	width: 52rem;
 	display: flex;
 	justify-content: center;
 }
@@ -36,19 +35,22 @@
 	border-bottom: 2px solid #05a5ff;
 }
 .section-featured .slider .inner{
-	width: 60rem;
+	width: 100%;
+	flex-direction: column;
 }
 .section-featured .slider .inner .inner-item{
-	width: 15rem;
+	width: 20rem;
+	display: block;
+	margin: auto;
 }
-.section-product-3 .slider .inner .nav-item{
-	width: 10rem;
+.section-product-3 .slider .inner{
+	text-align: center;
 }
 .section-featured .slider .inner .inner-item .card{
 	margin-bottom: 0;
 }
 .section-featured .slider .inner .inner-item .card .card-image img{
-	transform: scale(0.6);
+	transform: scale(1);
 }
 .innerPage .container .card-title-link{
 	font-size: 2rem;
@@ -57,8 +59,11 @@
 .innerPage .card{
 	border: none;
 }
+.innerPage .container .card-title a{
+	font-size: 3rem;
+}
 .innerPage .container .card-text{
-	font-size: 1rem;
+	font-size: 2.5rem;
 	font-weight: 500;
 }
 .innerPage .container .card-text.flex-card{
@@ -70,20 +75,24 @@
 	background: #ecf8ff;
 }
 .section-product-3.main-title .title-top{
-	font-size: 3.5rem;
+	color: #333333;
+	font-size: 4rem;
 	text-align: center;
 }
 .section-product-3.main-title .title-litter{
 	text-align: center;
-	font-size: 1.5rem;
+	font-size: 2.5rem;
 }
 .section-product-3 .nav {
 	color: #666666;
 	font-size: 2rem;
 }
+.section-product-3 .slider .inner .nav-item{
+	width: 30%;
+}
 .section-product-3 .nav .nav-item .nav-link{
-	width: 10rem;
-	font-size: 1.3rem;
+	width: 100%;
+	font-size: 3rem;
 	color: #666666;
 	text-align: center;
 	padding: 0.5rem 0;
@@ -106,14 +115,25 @@
 	align-items: flex-end;
 }
 .section-product-3 .DZ_Class .center-content{
-	width: 44%;	
+	/* width: 44%;	 */
 	text-align: left;
 }
 .section-product-3 .DZ_Class .center-content .content p {
 	color: #818181;
 	margin-top: 1rem;
-	font-size: 2.5rem;
+	font-size: 2.8rem;
 	padding: 0 1rem;
+}
+.section-product-3 .DZ_Class .center-content .body > div{
+	background: #FFFFFF;
+	float: left;
+	width: 35rem;
+	min-height: 40rem;
+	margin-left: 1.5rem;
+}
+.section-product-3 .DZ_Class .center-content .body > div:first-child{
+	margin-left: 2rem;
+	margin-right: 0;
 }
 .section-product-3 .DZ_Class .center-content .body .content{
 	padding-bottom: 1rem;
@@ -139,7 +159,7 @@
 }
 .section-product-3 .DZ_Class .center-content .second_tab a{
 	cursor: pointer;
-	font-size: 2.5rem;
+	font-size: 2.8rem;
 }
 .section-product-3 .DZ_Class .center-content .second_tab a.active{
 	color: #05a5ff;
@@ -206,7 +226,7 @@
 		border-bottom: 2px solid #e5e5e5;
 	}
 	.section-Cooperation .tab-box .nav-link{
-		width: 10rem;
+		width: 15rem;
 		display: flex;
 		font-size: 2rem;
 		color: #818181;
@@ -218,7 +238,7 @@
 		border-bottom: 2px solid transparent;
 	}
 	.section-Cooperation .tab-box .nav-link span{
-		font-size: 2rem;
+		font-size: 2.5rem;
 		padding: 0 1rem .5rem;
 	}
 	.section-Cooperation .tab-box .nav-link.active span{
@@ -229,7 +249,7 @@
 		color: #05a5ff;
 	}
 	.section-Cooperation .tab-box .tab-content .tab-pane p{	
-		font-size: 2rem;
+		font-size: 2.3rem;
 		color: #818181;
 	}
 

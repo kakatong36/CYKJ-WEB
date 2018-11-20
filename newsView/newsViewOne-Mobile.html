@@ -51,6 +51,9 @@
 							<a class="nav-link" onclick="toIndex('#features')">解决方案</a>
 						</li>
 						<li class="nav-item">
+							<a class="nav-link" onclick="toNewsList()">技术分享</a>
+						</li>
+						<li class="nav-item">
 							<a class="nav-link" onclick="toIndex('#pricing')">服务</a>
 						</li>
 						<li class="nav-item">
@@ -140,28 +143,26 @@
 	
 	<!-- 联系我们 -->
 	<footer class="footer_info">
-		<div class="companyInfo center-content p-t-30 p-b-30" id="contact">
+		<div class="companyInfo p-t-30 p-b-30" id="contact">
 			<ul class="info-left font-color-footer">
-				<li>
-					<span><a href="../team-Mobile.html">关于宸熠|</a></span>
-					<span><a href="../news-Mobile.html">知识分享|</a></span>
-					<span>服务条款|</span> 
-					<span>网站导航|</span>
-					<span>意见反馈</span>
-				</li>
-				<li>联系电话：18923719623</li>
-				<li>邮箱：marketing@chenyikoji.com</li>
-				<li>地址：深圳市罗湖区田贝四路宝琳国金1楼</li>
+				<li>宸熠珠宝科技</li>
+				<li>微信公众号</li>
 			</ul>
 			<div class="wx-info">
 				<img src="../images/index/wx_01.png" alt="">
-				<img src="../images/index/wx_02.png" alt="">
 			</div>
+			<ul class="info-left font-color-footer">
+				<li class="m-t-20">长按识别或截图保存</li>
+				<li>获取珠宝企业管理最佳解决方案</li>
+			</ul>
+			<div class="blue_bg footer_btn">购买咨询：189-999-999-99</div>
+			<div class="footer_btn">深圳市罗湖区田贝四路宝琳国金1楼</div>
 		</div>
 		<div class="copyright">
 			网站备案/许可证号： <a href="http://www.miitbeian.gov.cn">粤ICP备18134660号-3</a><br />&copy; 深圳市宸熠科技有限公司 2017
 		</div>
 	</footer>
+	
 
 
 	<!-- <div id="up-to-top">
@@ -192,6 +193,9 @@
 			}else{
 				location.href = '../team-Mobile.html';
 			}
+		}
+		function toNewsList(){
+			location.href = "../news-Mobile.html"
 		}
 	</script>
 

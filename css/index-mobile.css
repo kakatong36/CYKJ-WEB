@@ -4,7 +4,7 @@
     color: #4A90E2;
 }
 .swiper-height{
-	height: 20rem;
+	height: 20rem !important;
 	margin-top: 4.5rem;
 }
 /* 导航链接处理 */
@@ -21,17 +21,17 @@
 	padding-left: 3rem !important; 
 }
 #swiper_Mobile .swiper-wrapper .swiper-slide .left_intro .title{
-	font-size: 1rem;
+	font-size: 3rem;
 	margin-bottom: 0.3rem;
 }
 #swiper_Mobile .swiper-wrapper .swiper-slide .left_intro .handle_btn{
-	font-size: 0.3rem !important;
-	margin-top: 0.3rem;
-	width: 5rem;
+	font-size: 0.5rem !important;
+	margin-top: 5px;
+	width: 50px;
 	color: #FFFFFF;
 	text-align: center;
-	padding: 0.1rem 0;
-	border: 1px solid #FFFFFF;
+	padding: 2px 10px;
+	border: 0.1rem solid #FFFFFF;
 	cursor: pointer;
 } 
 #swiper_Mobile .swiper-wrapper .swiper-slide .left_intro a{
@@ -102,14 +102,14 @@
 }
 .section-about .card .card-header{
     padding: 0.18rem 0.2rem;
-	border-radius: calc(0.14rem - 1px);
+	border-radius: calc(0.14rem - 0.1rem);
     color: #666;
     background: initial;
 }
 .section-about .card.active .card-header{
 	color: #fff;
 	background-image: linear-gradient(-90deg, #80C3F3 0%, #4A90E2 100%);
-	border-radius: calc(0.14rem - 1px) calc(0.14rem - 1px) 0 0;
+	border-radius: calc(0.14rem - 0.1rem) calc(0.14rem - 0.1rem) 0 0;
 }
 .section-about .card .card-body{
 	display: none;
@@ -174,7 +174,7 @@
     margin: 0.38rem auto;
     width: 2rem;
     height: 0.6rem;
-    border: 1px solid #4A90E2;
+    border: 0.1rem solid #4A90E2;
     line-height: 0.6rem;
     color: #4A90E2;
 }
@@ -275,14 +275,14 @@
 }
 .section-consultation .card .card-header{
     padding: 0.18rem 0.2rem;
-	border-radius: calc(0.14rem - 1px);
+	border-radius: calc(0.14rem - 0.1rem);
     color: #666;
     background: initial;
 }
 .section-consultation .card.active .card-header{
 	color: #fff;
 	background-image: linear-gradient(-90deg, #80C3F3 0%, #4A90E2 100%);
-	border-radius: calc(0.14rem - 1px) calc(0.14rem - 1px) 0 0;
+	border-radius: calc(0.14rem - 0.1rem) calc(0.14rem - 0.1rem) 0 0;
 }
 .section-consultation .card .card-body{
 	display: none;
@@ -298,15 +298,14 @@
 
 .main-title .title-litter,
 .main-title .title-top{
-	font-size: 2.5rem;
+	font-size: 2.8rem;
 	margin: 1.5rem 0 1rem;
 }
 .main-title .title-top{
-	font-size: 3.5rem;
+	font-size: 4rem;
 }
 .section-features .slider,
 .section-knowledge .slider,
-.server-section .slider,
 .function-menu .slider{
 	overflow: auto;
 }
@@ -322,13 +321,17 @@
 	margin: 0 auto;
 }
 .server-section .slider .inner{
-	width: 120rem;
+	width: 100%;
 	display: flex;
+	justify-content: space-around;
 }
 .server-section .slider .inner .seletion-item{
-	width: 20rem;
 	margin-bottom: 1rem; 
-	font-size: 2.5rem;
+	font-size: 2.8rem;
+}
+.server-section .slider .inner .seletion-item img{
+	width: 7.6rem;
+	height: 7.6rem;
 }
 .server-section .slider .inner .seletion-item .introduce {
 	font-size: 3rem;
@@ -347,15 +350,17 @@
 	font-size: 3rem !important;
 }
 .function-menu .fun-item .context{
-	font-size: 2.5rem;
+	font-size: 2.8rem;
 }
 .footer_info .companyInfo{
 	display: flex;
-	font-size: 2.5rem;
+	font-size: 2.8rem;
 	flex-direction: column;
 }
 .footer_info .companyInfo .info-left{
 	padding: 0;
+	width: 100%;
+	text-align: center;
 }
 .footer_info .companyInfo .wx-info{
 	align-self: center;
@@ -367,27 +372,55 @@
 	margin-right: 0.5rem;
 }
 .production-box .section-about-1 {
-	border-bottom: 1px solid #e5e5e5;
+	border-bottom: 0.1rem solid #e5e5e5;
 }
 .production-box .tab-pane:last-child .section-about-1{
 	border: none;
 }
 .production-box .section-about-1 .section-heading{
 	margin-bottom: 0;
-	font-size: 3.5rem;
+	font-size: 4rem;
 }
 .production-box .section-about-1 p,
 .production-box .section-about-1 .list-text-icon-accordion{
-	font-size: 2.5rem;
+	font-size: 2.8rem;
+}
+.section-about-1 .list-text-icon-accordion .iconbox{
+	display: flex;
+}
+.section-about-1 .list-text-icon-accordion .iconbox .iconbox-text{
+	padding-left: 0.6rem;
 }
 .section-about-1 .list-text-icon-accordion .sysmbel_c{
-	width: 0.5rem;
-	height: 0.5rem;
-}
-.production-box .section-about-1 .section-content-text .btn-view{
-	margin: 0 auto 3rem;
+	min-width: 10px;
+	min-height: 10px;
 }
 
+.production-box .section-about-1 .section-content-text{
+	margin: 5rem auto 0;
+}
+.production-box .section-about-1 .section-content-text .btn-view{
+	margin: 0 auto 30px;
+	font-size: 2.5rem;
+	height: auto;
+}
+.section-knowledge .slider .inner {
+	width: 150rem;
+}
+.section-knowledge .slider .share-item{
+	width: 30%;
+	float: left;
+	display: flex;
+	flex-direction: column;
+	margin: 0 2.5rem;
+}
+.section-knowledge .slider .share-item span{
+	font-size: 2.8rem;
+	width: 100%;
+}
+.section-about-1 .list-text-icon{
+	padding-right: 0;
+}
 /* 解决方案 */
 .section-features .tab-box{
 	width: 100%;
@@ -396,7 +429,7 @@
 	margin: 0;
 }
 .section-features .section-head{
-	font-size: 3.5rem;
+	font-size: 4rem;
 }
 .section-features .tab-box> div.nav{
 	padding: 0 1rem;
@@ -406,18 +439,18 @@
 	background: transparent;
 	border-radius: 0;
 	font-size: 1.5rem !important;
-	border-bottom: 1px solid transparent;
+	border-bottom: 0.1rem solid transparent;
 }
 .section-features .tab-box .tab-content{
 	line-height: 1.8rem;
 }
 .section-features .tab-box> div.nav .nav-link.active{
 	color: #28abe3;
-	border-bottom: 1px solid #28abe3;
+	border-bottom: 0.1rem solid #28abe3;
 }
 .section-features .tab-box .tab-content .tab-pane .clause .clause-item,
 .section-features .tab-box .other-proposal{
-	font-size: 2rem !important;
+	font-size: 3rem !important;
 }
 footer .copyright{
     padding: 0.5rem 0;

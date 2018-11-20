@@ -5,10 +5,6 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
-.swiper-height{
-	height: 20rem !important;
-	margin-top: 4.5rem;
-}
 .section-about1 .center-content .left img{
 	margin-right: 5rem;
 	max-width: 100%;
@@ -31,7 +27,6 @@
 }
 .section-about1.bg-color{
 	padding: 3rem 0;
-	background: #E0E0E0;
 }
 
 .section-about1-center .center-content{

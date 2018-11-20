@@ -22,8 +22,16 @@
 	<link href="vendor\animsition\animsition.min.css" rel="stylesheet" media="all">
 	<link href="vendor\lightbox2\css\lightbox.min.css" rel="stylesheet" media="all">
 	<link href="css\index-mobile.css" rel="stylesheet" media="all">
+	<link href="css\common-mobile.css" rel="stylesheet" media="all">
 	<style>
 			/*collapse切换样式*/
+			.section-features .section-head{
+				color: #333333;
+			}
+			.section-features .color-black{
+				color: #6e6e6e;
+				font-size: 2.8rem;
+			}
 			.section-features .panel-group{
 				width: 100%;
 				border: 1px solid #E5E5E5;
@@ -39,41 +47,70 @@
 			.section-features .panel-group .panel a{
 				color: #333333;
 				text-decoration: none;
-				border: 1px solid red;
 			}
 			.section-features .panel-group .panel .panel-body{
 				color: #FFFFFF;
+				padding: 0 23px !important;
 				background: rgba(0,0,0,0.6);
 			}
 			.section-features .panel-group .panel .panel-heading .panel-title{
-				height: 3rem;
-				line-height: 3.5rem;
+				height: 60px;
 				text-align: left;
+				margin: 0 !important;
+			}
+			.section-features .panel-group .panel .panel-heading .panel-title a{
+				width: 100%;
+				height: 100%;
 				padding: 0 2rem;
+				font-size: 3rem;
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				color: rgb(0,161,251);
+			}
+			.section-features .panel-group .panel .panel-heading .panel-title a img{
+				width: 2rem;
+				height: 2rem;
+				transition: all 0.3s;
+			}
+			.section-features .panel-group .panel .panel-heading .panel-title a img.up{
+				display: none;
 			}
 			.section-features .panel-group .panel .panel-body{
 				padding: 0 1.2rem;
+				color: #6e6e6e;
+				background: rgb(244,249,250);
 			}
 			.section-features .panel-group .panel .panel-body .clause{
-				font-size: 1.2rem;
+				font-size: 2.9rem !important;
 				text-align: left !important;
+				padding-top: 2rem;
+			}
+			.section-features .panel-group .panel .panel-body .other-proposal p{
+				font-size: 2.8rem;
+			}
+			.section-features .panel-group .panel .panel-body .other-proposal .title{
+				font-weight: bold;
+				font-size: 3rem;
+				color: rgb(0,161,251);
 			}
 			.section-features .panel-group .panel .panel-body .other-proposal{
 				font-size: 1.2rem;
 				text-align: left;
+				padding-bottom: 2rem;
 			}
 			.section-features .panel-group .panel .panel-body .other-proposal p{
 				margin-bottom: 0
 			}
-			.section-features .panel-group .panel .panel-body .other-proposal .flex{
+			.section-features .panel-group .panel .panel-body .other-proposal .flex >div{
 				display: flex;
-				justify-content: space-between;
 			}
 			.section-features .panel-group .panel .panel-body .other-proposal .flex .icon-item{
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
 				align-items: center;
+				min-width: 9rem;
 			}		
 		</style>
 </head>
@@ -99,6 +136,9 @@
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#features">解决方案</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="news-Mobile.html">技术分享</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#pricing">服务</a>
@@ -145,50 +185,8 @@
 		</div>
 	</div>
 
-	<!-- 功能菜单 -->
-	<div>
-		<div class="function-menu">
-			<div class="slider">
-				<div class="inner row">
-					<div class="fun-item col-3">
-						<div class="title">人工智能</div>
-						<div class="bottom-bor"></div>
-						<div class="context">
-							<span>AI让效率提升70%</span>
-							<span>促进商业智能的可扩展性</span>
-						</div>
-					</div>
-					<div class="fun-item col-3">
-						<div class="title">大数据</div>
-						<div class="bottom-bor"></div>
-						<div class="context">
-							<span>完善的大数据产品体系</span>
-							<span>助力大数据计算和分析</span>
-						</div>
-					</div>
-					<div class="fun-item col-3">
-						<div class="title">云计算</div>
-						<div class="bottom-bor"></div>
-						<div class="context">
-							<span>企业数据线上线下互联</span>
-							<span>实现企业生态圈规模化</span>
-						</div>
-					</div>
-					<div class="fun-item col-3">
-						<div class="title">物联网</div>
-						<div class="bottom-bor"></div>
-						<div class="context">
-							<span>万物互联</span>
-							<span>为海量数据构建企业内部物联网络</span>
-						</div>
-				</div>      
-				</div>
-			</div>
-		</div>
-	</div>
-
 	<!-- 了解我们的产品 -->
-	<div class="main-title production-box" id="intro">
+	<div class="main-title production-box p-t-30" id="intro">
 		<div class="title-top">了解我们的产品</div>
 		<div class="title-litter">全球领先、安全、稳定的珠宝管理软件</div>
 		<div class="tab-box">
@@ -336,129 +334,9 @@
 	</div>
 
 	<!-- 解决方案 -->
-	<section id="features" class="section section-features features-bgImg" name="features">
-		<div class="section-head m-t-30">我们的解决方案</div>
-		<p class="type-white-1 m-b-20">针对珠宝行业业务特性，打造个性化解决方案</p>
-		<div class="tab-box">
-			<!-- <div class="nav nav-pills p-t-30" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-				<div class="slider">
-					<div class="inner">
-						<a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">智慧门店</a>
-						<a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">品牌商</a>
-						<a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">珠宝零售</a>
-						<a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">珠宝批发</a>
-						<a class="nav-link" id="v-pills-many-tab" data-toggle="pill" href="#v-pills-many" role="tab" aria-controls="v-pills-many" aria-selected="false">企业管理</a>
-					</div>
-				</div>
-			</div>
-			<div class="tab-content m-l-20 m-t-30 m-b-40 m-r-20" id="v-pills-tabContent">
-				<div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-					<div class="font-title-20 font-bold m-b-20">智慧门店</div>
-					<div class="clause">
-						<div class="clause-item">-通过智能硬件为用户带来全新的购物和服务体验，增加顾客在店内的停留时间和复购率</div>
-						<div class="clause-item">-实现门店数字化，解决以往“门店不知客”的问题，使线下店能够洞察顾客的兴趣、偏好，更好的服务于消费者</div>
-						<div class="clause-item">-识别线下客群，实现精准大数据营销，打通门店和线上渠道之间的数据，结合线上线下的运营经验和数据，提供精推的营销信息推送</div>
-					</div>
-					<div class="other-proposal m-t-20">
-						<div class="title font-bold m-b-10">建议搭配的产品</div>
-						<p class="m-l-30">ERP智能管理系统</p>
-						<p class="m-l-30">微信客户跟进系统</p>
-						<div class="title">产品应用</div>
-						<div class="flex m-t-10">
-							<div class="icon-item">
-								<img src="./images/index/faceRecognition.png" alt="">
-								<span>人脸识别</span>
-							</div>
-							<div class="icon-item">
-								<img src="./images/index/RFID.png" alt="">
-								<span>RFID射频识别</span>
-							</div>
-							<div class="icon-item">
-								<img src="./images/index/flowMeter.png" alt="">
-								<span>客流统计仪</span>
-							</div>
-							<div class="icon-item">
-								<img src="./images/index/intelligentPallet.png" alt="">
-								<span>智能看货盘</span>
-							</div>
-							<div class="icon-item">
-								<img src="./images/index/antenna.png" alt="">
-								<span>嵌入式柜台天线</span>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-					<div class="font-title-20 font-bold m-b-20">品牌商</div>
-					<div class="clause">
-						<div class="clause-item">-引入分销结构，支持总店/分店体系，甚至可以给不同角色配置不同的产品和价格，满足直营、代理、加盟的多重经营模式</div>
-						<div class="clause-item">-在原有渠道中，完美嫁接定制业务，实现直营、代理及加盟利益合理分配</div>
-						<div class="clause-item">-打造具有拼配DNA的专属定制系统</div>
-					</div>
-					<div class="other-proposal m-t-20">
-						<div class="title font-bold m-b-10">建议搭配的产品</div>
-						<p class="m-l-30">珠宝定制系统</p>
-						<p class="m-l-30">微信客户跟进系统</p>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-					<div class="font-title-20 font-bold m-b-20">珠宝零售</div>
-					<div class="clause">
-						<div class="clause-item">-一站式样品订购、下单配货，省去选款、拍图、包装产品、跟单等琐碎环节，还有视频培训支持</div>
-						<div class="clause-item">-轻松实现珠宝定制子母账户系统，支持老板设置倍率，店长选款（只能看见倍率后价格）</div>
-						<div class="clause-item">-丰富的珠宝款式，完美的产品呈现，需要额外人力、资金成本，帮助您快速实现珠宝定制</div>
-						<div class="clause-item">-安全植入定制模式，避免员工与工厂连接，保证渠道和成本不被泄露</div>
-					</div>
-					<div class="other-proposal m-t-20">
-						<div class="title font-bold m-b-10">建议搭配的产品</div>
-						<p class="m-l-30">珠宝定制系统</p>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-					<div class="font-title-20 font-bold m-b-20">珠宝批发</div>
-					<div class="clause">
-						<div class="clause-item">-取代传统蜡板下单，扫码录入。全新的线上线上下选款模式，更直观展示成品视觉效果</div>
-						<div class="clause-item">-科学批量选款，参数信息补充，独创“复制”购物模式，轻松解决“一款多型”的下单需求</div>
-						<div class="clause-item">-导入自有ERP货品订单自动生成，合理安排生产，降低环节反复确认工作量</div>
-						<div class="clause-item">-下单成功后系统自动出具需石单，实时上传送石信息，轻松跟进送石情况</div>
-						<div class="clause-item">-根据市场金价波动和工厂费调整，货品自动生成最新价格实时估算每个模号价格，微信一键分享</div>
-						<div class="clause-item">-“特殊工艺”随心取舍，“镶口部件”任意搭配</div>
-						<div class="clause-item">-无需现货，仅CAD模型就可渲染出现货效果</div>
-					</div>
-					<div class="other-proposal m-t-20">
-						<div class="title font-bold m-b-10">建议搭配的产品</div>
-						<p class="m-l-30">工厂下单助手</p>
-					</div>
-				</div>
-				<div class="tab-pane fade" id="v-pills-many" role="tabpanel" aria-labelledby="v-pills-many-tab">
-					<div class="font-title-20 font-bold m-b-40">企业管理</div>
-					<div class="clause">
-						<div class="clause-item">-通过智能硬件实现货品批量出入库、快速盘点、自动建立款式/现货档案，提高工作效率</div>
-						<div class="clause-item">-为智慧供应链的建设创造基础，通过大数据分析，实现 智能的商品陈列、补货、选品、销售预测等</div>
-						<div class="clause-item">-利用RFID射频识别技术，建立企业内部互联网络。对企业所有货品进行智能化的识别、定位、跟踪、监控和管理</div>
-					</div>
-					<div class="other-proposal m-t-20">
-						<div class="title font-bold m-b-10">建议搭配的产品</div>
-						<p class="m-l-30">ERP智能管理系统</p>
-						<div class="title">产品应用</div>
-						<div class="flex m-t-10">
-							<div class="icon-item">
-								<img src="./images/index/RFID.png" alt="">
-								<span>RFID射频识别</span>
-							</div>
-							<div class="icon-item">
-								<img src="./images/index/flowMeter.png" alt="">
-								<span>智能建档机</span>
-							</div>
-							<div class="icon-item">
-								<img src="./images/index/intelligentPallet.png" alt="">
-								<span>批量出入库盘</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div> -->
-		</div>
+	<section id="features" class="section section-features" name="features">
+		<div class="section-head m-t-30 m-b-10">我们的解决方案</div>
+		<p class="color-black m-b-20">针对珠宝行业业务特性，打造个性化解决方案</p>
 		<!-- 卡片折叠版 -->
 
 
@@ -466,9 +344,10 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne1">智慧门店</a>
-						<!-- glyphicon glyphicon-menu-up -->
-						<span class="glyphicon glyphicon-menu-down handleSpread" aria-hidden="true"></span>
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne1">
+							<span>智慧门店</span>
+							<img src="./images/index/dow.png" alt="" class="down">
+						</a>
 					</h4>
 				</div>
 				<div id="collapseOne1" class="panel-collapse collapse in">
@@ -482,27 +361,31 @@
 							<div class="title font-bold m-b-10">建议搭配的产品</div>
 							<p class="m-l-30">ERP智能管理系统</p>
 							<p class="m-l-30">微信客户跟进系统</p>
-							<div class="title">产品应用</div>
+							<div class="title m-t-20">产品应用</div>
 							<div class="flex m-t-10">
-								<div class="icon-item">
-									<img src="./images/index/faceRecognition.png" alt="">
-									<span>人脸识别</span>
+								<div>
+									<div class="icon-item">
+										<img src="./images/index/faceRecognition_Mobile.png" alt="">
+										<span>人脸识别</span>
+									</div>
+									<div class="icon-item">
+										<img src="./images/index/RFID_Mobile.png" alt="">
+										<span>RFID射频识别</span>
+									</div>
+									<div class="icon-item">
+										<img src="./images/index/flowMeter_Mobile.png" alt="">
+										<span>客流统计仪</span>
+									</div>
 								</div>
-								<div class="icon-item">
-									<img src="./images/index/RFID.png" alt="">
-									<span>RFID射频识别</span>
-								</div>
-								<div class="icon-item">
-									<img src="./images/index/flowMeter.png" alt="">
-									<span>客流统计仪</span>
-								</div>
-								<div class="icon-item">
-									<img src="./images/index/intelligentPallet.png" alt="">
-									<span>智能看货盘</span>
-								</div>
-								<div class="icon-item">
-									<img src="./images/index/antenna.png" alt="">
-									<span>嵌入式柜台天线</span>
+								<div>
+									<div class="icon-item">
+										<img src="./images/index/intelligentPallet_Mobile.png" alt="">
+										<span>智能看货盘</span>
+									</div>
+									<div class="icon-item">
+										<img src="./images/index/antenna_Mobile.png" alt="">
+										<span>嵌入式柜台天线</span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -512,9 +395,10 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo2">品牌商</a>
-						<!-- glyphicon glyphicon-menu-up -->
-						<span class="glyphicon glyphicon-menu-down handleSpread" aria-hidden="true"></span>
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo2">
+							<span>品牌商</span>
+							<img src="./images/index/dow.png" alt="" class="down">
+						</a>
 					</h4>
 				</div>
 				<div id="collapseTwo2" class="panel-collapse collapse">
@@ -535,9 +419,10 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree3">珠宝零售</a>
-						<!-- glyphicon glyphicon-menu-up -->
-						<span class="glyphicon glyphicon-menu-down handleSpread" aria-hidden="true"></span>
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree3">
+							<span>珠宝零售</span>
+							<img src="./images/index/dow.png" alt="" class="down">
+						</a>
 					</h4>
 				</div>
 				<div id="collapseThree3" class="panel-collapse collapse">
@@ -559,9 +444,10 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">珠宝批发</a>
-						<!-- glyphicon glyphicon-menu-up -->
-						<span class="glyphicon glyphicon-menu-down handleSpread" aria-hidden="true"></span>
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+							<span>珠宝批发</span>
+							<img src="./images/index/dow.png" alt="" class="down">
+						</a>
 					</h4>
 				</div>
 				<div id="collapseFive" class="panel-collapse collapse">
@@ -585,9 +471,10 @@
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h4 class="panel-title">
-						<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">企业管理</a>
-						<!-- glyphicon glyphicon-menu-up -->
-						<span class="glyphicon glyphicon-menu-down handleSpread" aria-hidden="true"></span>
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+							<span>企业管理</span>
+							<img src="./images/index/dow.png" alt="" class="down">
+						</a>
 					</h4>
 				</div>
 				<div id="collapseSix" class="panel-collapse collapse">
@@ -600,19 +487,21 @@
 						<div class="other-proposal m-t-20">
 							<div class="title font-bold m-b-10">建议搭配的产品</div>
 							<p class="m-l-30">ERP智能管理系统</p>
-							<div class="title">产品应用</div>
+							<div class="title m-t-20">产品应用</div>
 							<div class="flex m-t-10 justify-content-between">
-								<div class="icon-item">
-									<img src="./images/index/RFID.png" alt="">
-									<span>RFID射频识别</span>
-								</div>
-								<div class="icon-item">
-									<img src="./images/index/flowMeter.png" alt="">
-									<span>智能建档机</span>
-								</div>
-								<div class="icon-item">
-									<img src="./images/index/intelligentPallet.png" alt="">
-									<span>批量出入库盘</span>
+								<div>
+									<div class="icon-item">
+										<img src="./images/index/RFID_Mobile.png" alt="">
+										<span>RFID射频识别</span>
+									</div>
+									<div class="icon-item">
+										<img src="./images/index/flowMeter_Mobile.png" alt="">
+										<span>智能建档机</span>
+									</div>
+									<div class="icon-item">
+										<img src="./images/index/intelligentPallet_Mobile	.png" alt="">
+										<span>批量出入库盘</span>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -625,68 +514,75 @@
 	<!-- 服务 -->
 	<div class="main-title server-section p-b-60" id="pricing">
 		<div class="title-top">高品质软件与服务</div>
-		<div class="title-litter">为珠宝企业提供先进的大数据、云计算、安全可靠的互联网新技术</div>
+		<div class="title-litter">
+			<p style="margin-bottom:0;">为珠宝企业提供</p>
+			<p style="margin-bottom:0;">先进的大数据、云计算、安全可靠的互联网新技术</p>
+		</div>
 		<div>
 			<div class="slider">
-				<div class="selection inner">
-					<div class="seletion-item">
-						<div class="img">
-							<img src="./images/index/server_01.png" alt="">
+				<div class="selection">
+					<div class="inner">
+						<div class="seletion-item">
+							<div class="img">
+								<img src="./images/index/server_01.png" alt="">
+							</div>
+							<div class="introduce m-t-10">软硬件结合</div>
+							<!-- <div class="detailed-intro m-t-10">
+								<span>用突破性的技术</span>
+								<span>解决珠宝行业的棘手问题</span>
+							</div> -->
 						</div>
-						<div class="introduce m-t-10">软硬件结合</div>
-						<div class="detailed-intro m-t-10">
-							<span>用突破性的技术</span>
-							<span>解决珠宝行业的棘手问题</span>
+						<div class="seletion-item">
+							<div class="img">
+								<img src="./images/index/server_02.png" alt="">
+							</div>
+							<div class="introduce m-t-10">线下零售</div>
+							<!-- <div class="detailed-intro m-t-10">
+								<span>通过新技术赋能线下门店</span>
+								<span>提升门店运营效率</span>
+							</div> -->
 						</div>
-					</div>
-					<div class="seletion-item">
-						<div class="img">
-							<img src="./images/index/server_02.png" alt="">
-						</div>
-						<div class="introduce m-t-10">线下零售</div>
-						<div class="detailed-intro m-t-10">
-							<span>通过新技术赋能线下门店</span>
-							<span>提升门店运营效率</span>
-						</div>
-					</div>
-					<div class="seletion-item">
-						<div class="img">
-							<img src="./images/index/server_04.png" alt="">
-						</div>
-						<div class="introduce m-t-10">服务与培训</div>
-						<div class="detailed-intro m-t-10">
-							<span>为用户提供</span>
-							<span>一站式的服务与培训</span>
-						</div>
-					</div>
-					<div class="seletion-item">
-						<div class="img">
-							<img src="./images/index/server_03.png" alt="">
-						</div>
-						<div class="introduce m-t-10">企业应用</div>
-						<div class="detailed-intro m-t-10">
-							<span>业务、财务、营销等众多管理模块</span>
-							<span>移动端PC端全面集成</span>
+						<div class="seletion-item">
+							<div class="img">
+								<img src="./images/index/server_04.png" alt="">
+							</div>
+							<div class="introduce m-t-10">服务与培训</div>
+							<!-- <div class="detailed-intro m-t-10">
+								<span>为用户提供</span>
+								<span>一站式的服务与培训</span>
+							</div> -->
 						</div>
 					</div>
-					<div class="seletion-item">
-						<div class="img">
-							<img src="./images/index/server_05.png" alt="">
+					<div class="inner">
+						<div class="seletion-item">
+							<div class="img">
+								<img src="./images/index/server_03.png" alt="">
+							</div>
+							<div class="introduce m-t-10">企业应用</div>
+							<!-- <div class="detailed-intro m-t-10">
+								<span>业务、财务、营销等众多管理模块</span>
+								<span>移动端PC端全面集成</span>
+							</div> -->
 						</div>
-						<div class="introduce m-t-10">数据营销</div>
-						<div class="detailed-intro m-t-10">
-							<span>大数据技术提升客户体验</span>
-							<span>提高营销效率降低企业运营成本</span>
+						<div class="seletion-item">
+							<div class="img">
+								<img src="./images/index/server_05.png" alt="">
+							</div>
+							<div class="introduce m-t-10">数据营销</div>
+							<!-- <div class="detailed-intro m-t-10">
+								<span>大数据技术提升客户体验</span>
+								<span>提高营销效率降低企业运营成本</span>
+							</div> -->
 						</div>
-					</div>
-					<div class="seletion-item">
-						<div class="img">
-							<img src="./images/index/server_06.png" alt="">
-						</div>
-						<div class="introduce m-t-10">持续更新</div>
-						<div class="detailed-intro m-t-10">
-							<span>第一时间提供软件最新版本</span>
-							<span>保证软件持续有效的更新</span>
+						<div class="seletion-item">
+							<div class="img">
+								<img src="./images/index/server_06.png" alt="">
+							</div>
+							<div class="introduce m-t-10">持续更新</div>
+							<!-- <div class="detailed-intro m-t-10">
+								<span>第一时间提供软件最新版本</span>
+								<span>保证软件持续有效的更新</span>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -695,30 +591,24 @@
 	</div>
 	<!-- 知识分享 -->
 	<section  class="section main-title section-knowledge">
-		<div class="title-top box-style-1">领域大咖与知识分享</div>
+		<div class="title-top box-style-1">领域知识与技术分享</div>
 		<p class="title-litter box-style-1">
 			<a href="news-Mobile.html" style="color: #6e6e6e;text-decoration: none;">技术、学习、成长、共建、实践与研究</a>
 		</p>
 		<div>
-			<div class="slider">
-				<div class="share-content row inner">
-					<div class="share-item col-4" onclick="toView('newsViewOne-Mobile.html')">
-						<a href="#">
-							<img src="./images/index/share_01.png" alt="">
-							<span class="bg-color font-size-14">【方案】RFID仓储盘点管理系统方案</span>
-						</a>
+			<div class="slider m-b-20">
+				<div class="share-content inner">
+					<div class="share-item" onclick="toView('newsViewOne-Mobile.html')">
+						<img src="./images/index/share_01.png" alt="">
+						<span class="bg-color">【方案】RFID仓储盘点管理系统方案</span>
 					</div>
-					<div class="share-item col-4" onclick="toView('newsViewTwo-Mobile.html')">
-						<a href="#">
-							<img src="./images/index/share_02.png" alt="">
-							<span class="bg-color font-size-14">【分析】人脸识别客流统计客流人群分析</span>
-						</a>
+					<div class="share-item" onclick="toView('newsViewTwo-Mobile.html')">
+						<img src="./images/index/share_02.png" alt="">
+						<span class="bg-color">【分析】人脸识别客流统计客流人群分析</span>
 					</div>
-					<div class="share-item col-4" onclick="toView('newsViewThree-Mobile.html')">
-						<a href="#">
-							<img src="./images/index/share_03.png" alt="">
-							<span class="bg-color font-size-14">【合集】2018世界人工智能大会释放AI发展新信号</span>
-						</a>
+					<div class="share-item" onclick="toView('newsViewThree-Mobile.html')">
+						<img src="./images/index/share_03.png" alt="">
+						<span class="bg-color">【合集】2018世界人工智能大会释放AI发展新信号</span>
 					</div>
 				</div>
 			</div>
@@ -728,21 +618,18 @@
 	<footer class="footer_info">
 		<div class="companyInfo p-t-30 p-b-30" id="contact">
 			<ul class="info-left font-color-footer">
-				<li>
-					<span><a href="team-Mobile.html">关于宸熠|</a></span>
-					<span><a href="news-Mobile.html">知识分享|</a></span>
-					<span>服务条款|</span> 
-					<span>网站导航|</span>
-					<span>意见反馈</span>
-				</li>
-				<li>联系电话：18923719623</li>
-				<li>邮箱：marketing@chenyikoji.com</li>
-				<li>地址：深圳市罗湖区田贝四路宝琳国金1楼</li>
+				<li>宸熠珠宝科技</li>
+				<li>微信公众号</li>
 			</ul>
 			<div class="wx-info">
 				<img src="./images/index/wx_01.png" alt="">
-				<img src="./images/index/wx_02.png" alt="">
 			</div>
+			<ul class="info-left font-color-footer">
+				<li class="m-t-20">长按识别或截图保存</li>
+				<li>获取珠宝企业管理最佳解决方案</li>
+			</ul>
+			<div class="blue_bg footer_btn">购买咨询：189-999-999-99</div>
+			<div class="footer_btn">深圳市罗湖区田贝四路宝琳国金1楼</div>
 		</div>
 		<div class="copyright">
 			网站备案/许可证号： <a href="http://www.miitbeian.gov.cn">粤ICP备18134660号-3</a><br />&copy; 深圳市宸熠科技有限公司 2017
@@ -879,25 +766,26 @@
 			//解决方案处，点击关闭其他
 			$(".panel .panel-heading").click(function(){
 				var index = $(".panel .panel-heading").index(this);
-				//右侧的icon图标改变
-				// $.each($(".handleSpread"), function(iconIndex,iconCurrent){
-				// 	if(iconIndex != index){
-				// 		//是否展开
-				// 		var isSpread = $($(".handleSpread")[iconIndex]).hasClass("glyphicon-menu-up");
-				// 		if(!isSpread){
-				// 			$($(".handleSpread")[iconIndex]).addClass("glyphicon-menu-up");
-				// 			$($(".handleSpread")[iconIndex]).removeClass("glyphicon-menu-down");
-				// 		}else{
-				// 			$($(".handleSpread")[iconIndex]).removeClass("glyphicon-menu-up");
-				// 			$($(".handleSpread")[iconIndex]).addClass("glyphicon-menu-down");
-				// 		}
-				// 	}
-				// })
 				$.each($(".panel .panel-heading"), function(i,current){
 					if(i != index){
 						$($(".panel .panel-collapse")[i]).removeClass("show");
 						$($(".panel .panel-title a")[i]).trigger(".collapsed");
 						$(".panel .panel-title a")[i].style.ariaExpanded = false;
+						//箭头朝下
+						$($(".panel .panel-title .down")[i]).css({
+							"transform": "rotate(0deg)"
+						})
+					}else{
+						//箭头朝上
+						if($($(".panel .panel-collapse")[i]).hasClass("show")){
+							$($(".panel .panel-title .down")[i]).css({
+								"transform": "rotate(0deg)"
+							})
+						}else{
+							$($(".panel .panel-title .down")[i]).css({
+								"transform": "rotate(-180deg)"
+							})
+						}
 					}
 				})
 			})		

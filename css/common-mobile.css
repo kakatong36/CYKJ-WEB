@@ -1,7 +1,7 @@
 
 .swiper-height{
 	height: 20rem !important;
-	margin-top: 4.5rem;
+	margin-top: 4.3rem;
 }
 html{
 	font-size: 10px;
@@ -9,6 +9,10 @@ html{
 .center-content{
 	width: 100% !important;
 	margin: 0 auto;
+}
+.swiper-container .swiper-wrapper .swiper-slide img.img-fluid{
+	max-width: 100%;
+	height: 100% !important;
 }
 .wx-info{
 	width: 100%;
@@ -25,5 +29,22 @@ html{
 footer.footer_info .font-color-footer{
 	font-size: 2.5rem;
 	padding: 0;
+	width: 100%;
 	margin: 0 auto 1rem;
+	text-align: center;
+}
+.footer_info .companyInfo .footer_btn{
+	margin: 0 auto 1rem;
+	width: 80%;
+	padding: 0.6rem 0;
+	color: #6e6e6e;
+	text-align: center;
+	display: block;
+	font-size: 2.8rem; 
+	border: 1px solid #6e6e6e;
+}
+.footer_info .companyInfo .footer_btn.blue_bg{
+	color: #FFFFFF;
+	background: rgb(0,161,251);
+	border: 1px solid rgb(0,161,251);
 }

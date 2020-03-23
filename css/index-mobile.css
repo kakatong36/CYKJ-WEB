@@ -363,6 +363,8 @@
 }
 .footer_info .companyInfo .wx-info img{
 	margin: 0;
+	width: 128px;
+	height: 128px;
 }
 .footer_info .companyInfo .wx-info img:first-child{
 	margin-right: 0.5rem;

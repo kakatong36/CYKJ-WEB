@@ -360,6 +360,11 @@ footer .copyright{
 footer .copyright a{
 	color: #fff;
 }
+.footer_info .companyInfo .wx-info img{
+	margin: 0;
+	width: 128px;
+	height: 128px;
+}
 	/* .slider::-webkit-scrollbar{  
 		width: 0;
 		height: 0;
